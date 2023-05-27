@@ -26,7 +26,6 @@ public class Monster1 {
     final String DMG_CORRECTION_1 = "1" ;
     final String DMG_CORRECTION_120 = "120" ;
 
-
     //toStringメソッド
 
     public String toString(){
@@ -49,7 +48,7 @@ public class Monster1 {
 
     //setWazaメソッド
     void setWaza(String nm, String dmr){
-        if(dmr.matches(WAZA_DMG_RATE_REGEXP)){
+        if( dmr.matches( WAZA_DMG_RATE_REGEXP ) ) {
             wazaNm = nm ;
             wazaDmgRate = dmr ;
         }
@@ -83,12 +82,11 @@ public class Monster1 {
 
         int dmg = (bdPassDmg.multiply(dmRate)).intValue();
 
-        if (hp>dmg){
+        if ( hp>dmg ){
             hp -= dmg ;
-        }else{
+        } else {
             hp = 0 ;
         }
-
         return dmg;
     }
 

@@ -9,8 +9,6 @@ class BattleWild {
 	//フィールド（定数）
 	final int ESCAPE_SUCCESS_ST_RATE = 50 ;     //「にげる」成功率の基準値（50%）
 
-
-
 	//やせいのモンスターとのバトル
 	public void mainBattle () {
 

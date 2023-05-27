@@ -50,7 +50,7 @@ public class Monster3 {
     Monster3(String tr, String nm, int lev){
         this(tr, nm);                //コンストラクタ2呼び出し
 
-        if(lev > 1){
+        if( lev > 1 ) {
             levelUp(lev - 1);
         }
     }
@@ -78,7 +78,7 @@ public class Monster3 {
 
     //setWazaメソッド
     public void setWaza(String nm, String dmr){
-        if(dmr.matches(WAZA_DMG_RATE_REGEXP)){
+        if( dmr.matches(WAZA_DMG_RATE_REGEXP ) ) {
             wazaNm = nm ;
             wazaDmgRate = dmr ;
         }
@@ -112,12 +112,11 @@ public class Monster3 {
 
         int dmg = (bdPassDmg.multiply(dmRate)).intValue();
 
-        if (hp>dmg){
+        if ( hp>dmg ) {
             hp -= dmg ;
-        }else{
+        } else {
             hp = 0 ;
         }
-
         return dmg;
     }
 

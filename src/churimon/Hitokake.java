@@ -21,6 +21,6 @@ class Hitokake extends Monster3 {
         setAtk(getAtk() + 8 * up)  ;
         setDef(getDef() + 5 * up)  ;
         setSpd(getSpd() + 9 * up)  ;
-        setHp(getHpMax())             ;
+        setHp(getHpMax())          ;
     }
 }
